@@ -1,0 +1,15 @@
+git init
+mongo ds137759.mlab.com:37759/bdname -u username -p password
+nodemon server
+set NODE_ENV=production
+nodemon server
+git status
+git add .
+git commit -m "first"
+heroku login
+heroku create name
+git remote -v
+heroku config:set NODE_ENV=production
+git push heroku master
+heroku ps:scale web=1
+heroku open
